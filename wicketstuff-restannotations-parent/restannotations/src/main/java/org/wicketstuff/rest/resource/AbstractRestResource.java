@@ -599,7 +599,7 @@ public abstract class AbstractRestResource<T extends IWebSerialDeserial> impleme
 			// if parameter is null and is required, abort extraction.
 			if (paramValue == null && methodParameter.isRequired())
 			{
-				String exMsg = String.format("No valid value could be found the given method parameter: method %s, parameter index %i",
+				String exMsg = String.format("No valid value could be found the given method parameter: method %s, parameter index %d",
 					mappedMethod.getMethodInfo().getMethod().getName(), methodParameter.getParamIndex());
 				log.debug(exMsg);
 				throw new WicketRuntimeException(exMsg);
